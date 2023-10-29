@@ -19,7 +19,7 @@ npm run devStart
 ```
 This project doesn't have a frontend url, but it has a GraphiQL interface at (http://localhost:5000/graphql) once the server is running. You can use GraphiQL to test queries as demonstrated in the screenshots bellow.
 
-#Query samples
+# Query samples
 List all books
 ```
 {
