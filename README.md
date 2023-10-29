@@ -100,7 +100,7 @@ mutation {
 }
 ```
 
-#screenshots
+# Screenshots
 <img src="./screenshots/graphql-server-screenshot1.png?raw=true">
 <img src="./screenshots/graphql-server-screenshot2.png?raw=true">
 
