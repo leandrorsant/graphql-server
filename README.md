@@ -20,7 +20,7 @@ npm run devStart
 This project doesn't have a frontend url, but it has a GraphiQL interface at (http://localhost:5000/graphql) once the server is running. You can use GraphiQL to test queries as demonstrated in the screenshots bellow.
 
 # Query samples
-List all books
+List all books:
 ```
 {
   books {
@@ -31,7 +31,7 @@ List all books
 }
 
 ```
-List all Authors
+List all Authors:
 ```
 {
   authors {
@@ -40,7 +40,28 @@ List all Authors
   }
 }
 ```
-Update a book
+
+Add a book:
+```
+mutation {
+  addBook(name: "new book", authorId: 1) {
+    id
+    name
+  }
+}
+```
+
+Add an author:
+```
+mutation {
+  addAuthor(name: "new author") {
+    id
+    name
+  }
+}
+```
+
+Update a book:
 ```
 mutation {
   updateBook(id: 1, name:"new name", authorId:1) {
@@ -50,7 +71,7 @@ mutation {
 }
 ```
 
-Update an author
+Update an author:
 ```
 mutation {
   updateAuthor(id: 1, name:"new name") {
@@ -60,7 +81,7 @@ mutation {
 }
 ```
 
-Remove a book
+Remove a book:
 ```
 mutation {
   removeBook(id: 1) {
@@ -69,7 +90,7 @@ mutation {
   }
 }
 ```
-Remove an author
+Remove an author:
 ```
 mutation {
   removeAuthor(id: 1) {
